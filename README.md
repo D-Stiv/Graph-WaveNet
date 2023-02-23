@@ -18,7 +18,33 @@ This is the original pytorch implementation of Graph WaveNet in the following pa
 
 ### Step1: Download METR-LA and PEMS-BAY data from [Google Drive](https://drive.google.com/open?id=10FOTa6HXPqX8Pf5WRoRwcFnW9BrNZEIX) or [Baidu Yun](https://pan.baidu.com/s/14Yy9isAIZYdU__OYEQGa_g) links provided by [DCRNN](https://github.com/liyaguang/DCRNN).
 
-### Step2: Process raw data 
+
+### Step2 (optional): Create Virtual environment 
+
+```
+# creation environmen with name "my_venv"
+virtualenv my_venv
+or (if it does not work)
+python3 -m venv my_venv
+
+# activate
+source venv/bin/activate
+
+# install requirements
+pip install -r requirements.txt
+
+# install table separetly (if you put it in requirements.txt it does not work)
+pip istall table
+
+# in case of issue with  conv1D (RuntimeError: Expected 2D (unbatched) or 3D (batched) input to conv1d, but ...) - https://github.com/YuvalNirkin/fsgan/issues/162
+pip install torch==1.5.1+cu101 torchvision==0.6.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+and (if the error persists)
+pip install opencv-python
+
+
+```
+
+### Step3: Process raw data 
 
 ```
 # Create data directories
