@@ -35,6 +35,8 @@ pip install -r requirements.txt
 
 # install table separetly (if you put it in requirements.txt it does not work)
 pip istall table
+and (if it does not work)
+pip install tables
 
 # in case of issue with  conv1D (RuntimeError: Expected 2D (unbatched) or 3D (batched) input to conv1d, but ...) - https://github.com/YuvalNirkin/fsgan/issues/162
 pip install torch==1.5.1+cu101 torchvision==0.6.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html
