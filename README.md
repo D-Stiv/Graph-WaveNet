@@ -28,7 +28,7 @@ or (if it does not work)
 python3 -m venv my_venv
 
 # activate
-source venv/bin/activate
+source my_venv/bin/activate
 
 # install requirements
 pip install -r requirements.txt
