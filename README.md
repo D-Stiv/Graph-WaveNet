@@ -41,7 +41,7 @@ pip install tables
 # in case of issue with  conv1D (RuntimeError: Expected 2D (unbatched) or 3D (batched) input to conv1d, but ...) - https://github.com/YuvalNirkin/fsgan/issues/162
 pip install torch==1.5.1+cu101 torchvision==0.6.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html
 and (if the error persists)
-pip install opencv-python
+pip3 install torch==1.10.1+cu113 torchvision==0.11.2+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 
 
 ```
